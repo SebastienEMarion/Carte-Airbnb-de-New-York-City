@@ -14,5 +14,11 @@ C'est aussi un des enjeux politiques de Zohran Mamdani, nouveau maire de New-Yor
 
 # Bibliographie :
 [1] "Registration Rules and Laws",</br >
+*Int. No. 2309-A*, 13 mars 2021 à 11 h 07, Council Members Kallos, Rivera, Rosenthal, Reynoso, Gibson, Powers, Ayala, Brannan, Gennaro, Moya, Adams, Dromm, Levine, Salamanca, Holden, Dinowitz, Treyger, Koslowitz, Riley and Feliz</br >
 _Office of Special Enforcement_</br >
 (https://www.nyc.gov/site/specialenforcement/registration-law/registration-rules-and-laws.page)
+
+[2] "La campagne politique d’Airbnb à New York se retourne contre elle alors que Zohran Mamdani progresse",
+novembre 24 2025, Uvika Wahi,</br >
+*RentalScaleup.com*</br >
+(https://www.rentalscaleup.com/fr/la-campagne-politique-dairbnb-a-new-york-se-retourne-contre-elle-alors-que-zohran-mamdani-progresse/)
