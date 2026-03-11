@@ -8,7 +8,7 @@ Réalisée en programmation Python, partiellement à l'aide d'**intelligence art
 
 ## I. Structure
 
-La structure du code est assez classique pour un script Python. Elle se divise en 5 éléments : a. Les headers / bibliothèques / includes (des éléments extérieurs au script qui lui permettent d'utiliser des fonctions définies autre part, dans un système d'interdépendance entre systèmes : c'est le riche b. Les déclarations globales, c. Les helpers
+La structure du code est assez classique pour un script Python. Elle se divise en 5 éléments : a. Les headers / bibliothèques / includes (des éléments extérieurs au script qui lui permettent d'utiliser des fonctions définies autre part, dans un système d'interdépendance entre systèmes : c'est le riche b. Les déclarations globales, c. Les helpers (des fonctions intermédiaires qui seront appelées dans la fonction main, effectuant des tâches modulaires qui pourraient également faire l'objet d'un autre script, par exemple helper1.py, qu'on invoquerait dans la partie des headers), d. la main, e. le main entrypoint, qui communique à l'interpréteur comment exécuter une fonction main en Python à l'aide du __name__
 
 # Intérêt de la carte
 
