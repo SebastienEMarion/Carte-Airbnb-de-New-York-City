@@ -6,7 +6,7 @@ Réalisée en programmation Python, partiellement à l'aide d'**intelligence art
 
 # Procédé du script Python
 
-## 1) Structure
+## Structure
 
 La structure du code est assez classique pour un script Python. Elle se divise en 5 éléments : a. Les headers / bibliothèques / includes (des éléments extérieurs au script qui lui permettent d'utiliser des fonctions définies autre part, dans un système d'interdépendance entre systèmes : c'est le riche b. Les déclarations globales, c. Les helpers
 
