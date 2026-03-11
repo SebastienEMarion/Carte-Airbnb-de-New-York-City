@@ -1,5 +1,5 @@
 # Carte Airbnb de New-York-City
-Carte Airbnb de New York City, source : Inside Airbnb, septembre 2025. L'intérêt d'une telle carte est de voir le potentiel impact des politiques voulues par le nouveau maire de la ville de New York, Zhoran Mamdani. Cependant, une loi déjà en place allait dans ce sens : la Local Law 18 de 2022. </br >
+Carte Airbnb de New York City, source : Inside Airbnb [4], septembre 2025. L'intérêt d'une telle carte est de voir le potentiel impact des politiques voulues par le nouveau maire de la ville de New York, Zhoran Mamdani. Cependant, une loi déjà en place allait dans ce sens : la Local Law 18 de 2022. </br >
 Réalisée en programmation Python, partiellement à l'aide d'**intelligence artificielle**, et des bibliothèques Python suivantes : **matplotlib.pyplot** (pour l'interface graphique), **pandas** (pour la manipulation d'images), **osmnx** (pour l'accès à l'API d'Open Street Maps _Nominatim_), **geopandas** (pour la manipulation de géocoordonnées), **time** (pour calculer l'exécution d'un programme à des fins d'optimisation), **mpl_toolkits** (pour l'insertion du graphique de visualisation statistique). 
 
 <img width="1920" height="967" alt="NYC séjours Airbnb de septembre 2025" src="https://github.com/user-attachments/assets/21c80c40-fdce-40a0-882d-d47ee7ad433b" />
@@ -29,3 +29,9 @@ novembre 24 2025, Uvika Wahi,</br >
 dernière mise à jour le 19 août 2025, Dan Burrows,</br >
 _Kiplinger.com_</br >
 (https://www.kiplinger.com/real-estate/603612/15-us-cities-with-the-highest-average-home-prices)
+
+[4] "Get the Data",</br >
+_New York City, New York, United States_, 01 October, 2025
+ </br >
+_Inside Airbnb_,</br >
+(https://insideairbnb.com/get-the-data/)
