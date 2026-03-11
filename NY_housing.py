@@ -1,18 +1,20 @@
 #================
 # INCLUDES
 #================
-import matplotlib.pyplot as plt
-import pandas as pd
-import osmnx as ox
-import geopandas as gpd
-import time
-from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+import matplotlib.pyplot as plt # interface graphique
+import pandas as pd # manipulation d'images
+import osmnx as ox # Open Street Maps Nominatim
+import geopandas as gpd # manipulation de données géolocalisées
+import time # temps d'exécution du programme
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes # artiste propre à matplotlib (mpl) qui me permet de faire un graphique des données statistiques qui sont réparties spatialement dans l'helper
 
 #================
 # GLOBALS
 #================
 start = time.time()
 city_name = "New York, New York, United States"
+
+# mettre les counties en boroughs aide à la compréhension entre pratique langagière courante et technicités administratives qu'utilise l'API de OSM
 
 county_to_borough = {
     "Bronx County": "Bronx",
@@ -21,7 +23,7 @@ county_to_borough = {
     "Queens County": "Queens",
     "Richmond County": "Staten Island"
 }
-
+# des couleurs différentes me permettent de distinguer visuellement les différents boroughs
 borough_colors = {
     "Bronx": "#da70f5",          
     "Brooklyn": "#85cece",       
@@ -30,7 +32,7 @@ borough_colors = {
     "Staten Island": "#4649f8"   
 }
 
-# Local CSV path
+# chemin local du fichier csv des locations Airbnb tirées des archives d'Inside Airbnb
 airbnb_csv_path = "listings.csv"
 
 #================
@@ -52,9 +54,9 @@ def fetch_airbnb_from_csv(csv_path, filter_year=2025):
     gdf = gpd.GeoDataFrame(
         df,
         geometry=gpd.points_from_xy(df.longitude, df.latitude),
-        crs="EPSG:4326"
+        crs="EPSG:4326" # On met en place un Coordinate Reference System en accord avec la projection actuelle.
     )
-    return gdf
+    return gdf # On retourne un objet Geodataframe qui pourra être plot sur un artiste, unité de matplotlib.pyplot
 
 #================
 # MAIN
@@ -181,12 +183,12 @@ def main():
         fontweight="bold"
     )
 
-    # Opaque white background
+    # Fond blanc opaque pour aider à la lisibilité de l'inset
     inset_ax.patch.set_facecolor("white")
     inset_ax.patch.set_alpha(1.0)
     inset_ax.set_zorder(20)
 
-    # Subtle frame
+    # Cadre noir de l'inset
     for spine in inset_ax.spines.values():
         spine.set_visible(True)
         spine.set_color("black")
@@ -194,7 +196,7 @@ def main():
 
     inset_ax.tick_params(axis='x', labelsize=9)
     inset_ax.tick_params(axis='y', labelsize=8)
-    
+    # Chronométrage de l'exécution AVANT visualisation de l'image, sinon on calculera le temps de la fenêtre ouverte, ce qui peut avoir son intérêt mais pas pour mesurer la performance d'exécution des étapes préalables.
     print(f"Script execution in {time.time() - start:.2f} seconds")
     plt.show()
 # ===================
@@ -203,3 +205,4 @@ def main():
 if __name__ == "__main__": #__name__ communique à l'interpréteur d'exécuter la main(),
     # Mais Python autorise d'autres paradigmes qu'une main(), programmation impérative structurée
     main()
+
