@@ -17,7 +17,9 @@ La structure du code est assez classique pour un script Python. Elle se divise e
 
 ## II. L'ordre d'exécution
 Dans un **temps 1 (T1)**, le script va aller chercher les bibliothèques dont il a besoin. En local, j'utilise personnellement un ```venv```, dans l'interface de ligne de commande, plutôt que d'utiliser des solutions alternatives de virtualisation d'environnements Python comme Anaconda ou Jupyter Notebook, parce que je préfère pouvoir rester sur Visual Code Studio, mon IDE de prédilection sur Windows. </br>
-Dans un **temps 2 (TD2)**, les globales sont définies, notamment ```start = time.time()``` qui me servira à calculer le temps total du script, parce que Python est un langage de programmation Just In Time (JIT) en opposition à la compilation. L'exécution d'un script met donc plus de temps à cause de l'_overhead_. Mais aussi ```city_name = "New York, New York, United States"```, qui me sert à communiquer avec *Nominatim* dans Open Street Maps. Aussi je peuple deux dictionnaires, l'un de couleurs et l'autre convertissant les _counties_ en _boroughs_ (car les _boroughs_ sont une division avec laquelle les gens sont plus familiers par rapport aux _counties_, qui était une maille pertinente pour localiser New-York-City parmi ses environs, raison d'être des corps d'eaux également) et établit un chemin vers le fichier .csv des archives d'Inside Airbnb [4]
+Dans un **temps 2 (T2)**, les globales sont définies, notamment ```start = time.time()``` qui me servira à calculer le temps total du script, parce que Python est un langage de programmation Just In Time (JIT) en opposition à la compilation. L'exécution d'un script met donc plus de temps à cause de l'_overhead_. Mais aussi ```city_name = "New York, New York, United States"```, qui me sert à communiquer avec *Nominatim* dans Open Street Maps. Aussi je peuple deux dictionnaires, l'un de couleurs et l'autre convertissant les _counties_ en _boroughs_ (car les _boroughs_ sont une division avec laquelle les gens sont plus familiers par rapport aux _counties_, qui était une maille pertinente pour localiser New-York-City parmi ses environs, raison d'être des corps d'eaux également) et établit un chemin vers le fichier .csv des archives d'Inside Airbnb [4].</br>
+Dans un **temps 3 (T3)** c'est le **main entrypoint** qui va s'exécuter, d'abord quand l'interpréteur va lire ```__name__```, puis quand il va exécuter ```main()```.</br>
+Durant le **temps 4 (T4)** la fonction ```main()``` s'exécute, qui exécutera l'_helper_ ```def fetch_airbnb_from_csv(csv_path, filter_year=2025):``` dans un **temps 5 (T5)**, utilisant notamment le chemin .csv pour créer un objet ```geodataformat``` avec chaque point dans sa latitude et longitude correspondant à une entrée dans le tableau attributaire [6].
 
 # Intérêt de la carte
 
@@ -61,3 +63,7 @@ _Inside Airbnb_,</br >
 Hubert Godfroy, 12 novembre 2015, _ESSTIN, École Supérieure des Sciences et Technologies de l'Ingénieur de Nancy,_</br >
 _Laboratoire Lorrain de Recherche en Informatique et ses Applications (LORIA)_</br >
 (https://members.loria.fr/hgodfroy/pages/teaching/esstin-python/seance3/cours/paradigmes.pdf)
+
+[6] "Définition de Tableau Attributaire | Dictionnaire SIG",</br>
+_Support ESRI_ </br>
+(https://support.esri.com/fr-fr/gis-dictionary/attribute-table)
