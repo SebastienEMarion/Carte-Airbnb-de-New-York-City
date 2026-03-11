@@ -8,7 +8,12 @@ Réalisée en programmation Python, partiellement à l'aide d'**intelligence art
 
 ## I. Structure
 
-La structure du code est assez classique pour un script Python. Elle se divise en 5 éléments :</br > 1. Les headers / bibliothèques / includes (des éléments extérieurs au script qui lui permettent d'utiliser des fonctions définies autre part, dans un système d'interdépendance entre systèmes) : c'est le riche écosystème de bibliothèques qui fait de Python l'un des langages phares de la programmation scientifique. </br > 2. Les déclarations globales, servant à initialiser à défaut de définir les valeurs globales qui pourront être utilisées dans les headers </br > 3. Les helpers (des fonctions intermédiaires qui seront appelées dans la fonction main, effectuant des tâches modulaires qui pourraient également faire l'objet d'un autre script, par exemple helper1.py, qu'on invoquerait dans la partie des headers), </br > 4. la main, fonction principale du script. </br > 5. Le main entrypoint, qui communique à l'interpréteur comment exécuter une fonction main en Python à l'aide du ```__name__``` Le script correspond donc à de la "programmation impérative structurée" [5].
+La structure du code est assez classique pour un script Python. Elle se divise en 5 éléments :</br > 
+1. Les **headers** / **bibliothèques** / **includes** (des éléments extérieurs au script qui lui permettent d'utiliser des fonctions définies autre part, dans un système d'interdépendance entre systèmes) : c'est le riche écosystème de bibliothèques qui fait de Python l'un des langages phares de la programmation scientifique. </br >
+2. Les **déclarations globales**, servant à initialiser à défaut de définir les valeurs globales qui pourront être utilisées dans les headers </br >
+3. Les **helpers** (des fonctions intermédiaires qui seront appelées dans la fonction main, effectuant des tâches modulaires qui pourraient également faire l'objet d'un autre script, par exemple helper1.py, qu'on invoquerait dans la partie des headers), </br >
+4. la **main**, fonction principale du script. </br >
+5. Le **main entrypoint**, qui communique à l'interpréteur comment exécuter une fonction main en Python à l'aide du ```__name__``` Le script correspond donc à de la "programmation impérative structurée" [5].
 
 # Intérêt de la carte
 
