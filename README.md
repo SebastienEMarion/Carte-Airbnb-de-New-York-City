@@ -24,3 +24,8 @@ _Office of Special Enforcement_</br >
 novembre 24 2025, Uvika Wahi,</br >
 *RentalScaleup.com*</br >
 (https://www.rentalscaleup.com/fr/la-campagne-politique-dairbnb-a-new-york-se-retourne-contre-elle-alors-que-zohran-mamdani-progresse/)
+
+[3] "The 15 Most Expensive Housing Markets in the US: Real Estate with the Highest Average Home Prices",</br >
+dernière mise à jour le 19 août 2025, Dan Burrows,</br >
+_Kiplinger.com_</br >
+(https://www.kiplinger.com/real-estate/603612/15-us-cities-with-the-highest-average-home-prices)
