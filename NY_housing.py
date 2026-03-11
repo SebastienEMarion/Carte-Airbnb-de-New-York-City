@@ -197,6 +197,9 @@ def main():
     
     print(f"Script execution in {time.time() - start:.2f} seconds")
     plt.show()
-
-if __name__ == "__main__":
+# ===================
+# Main entrypoint
+# ===================
+if __name__ == "__main__": #__name__ communique à l'interpréteur d'exécuter la main(),
+    # Mais Python autorise d'autres paradigmes qu'une main(), programmation impérative structurée
     main()
